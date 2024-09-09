@@ -582,6 +582,18 @@ video {
   width: 16rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -590,6 +602,10 @@ video {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-3 {
@@ -604,6 +620,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-4xl {
