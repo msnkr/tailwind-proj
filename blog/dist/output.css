@@ -975,6 +975,14 @@ video {
     bottom: 1rem;
   }
 
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
   .lg\:ml-8 {
     margin-left: 2rem;
   }
