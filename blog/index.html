@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/blog/dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="main-content">
         <div class="mt-20 text-gray-600 mb-4">
-            <h1 class="font-bold uppercase font text-5xl tracking-widest text-center md:text-left md:ml-8">Blog</h1>
+            <h1 class="font-bold uppercase font text-5xl tracking-wider text-center md:text-left md:ml-8 text-blue-400">Blog</h1>
         </div>
-        <div class="mb-4 bg-green-400">
+        <div class="mb-4">
             <ul class="flex justify-center space-x-6 md:justify-end md:mr-8">
                 <li>
                     <h3><a href="#" class="hover:border-b-2 hover:border-b-red-300">Alteryx</a></h3>
@@ -37,9 +37,25 @@
         </div>
     </div>
 
-    <div class="cards-container">
+    <div class="cards-container md:grid grid-cols-2 lg:grid-cols-3">
+        <div class="cards-main p-4 ">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
+                <div class="cards-top mb-4">
+                    <h3 class="font-semibold text-gray-500 tracking-widest text-lg">Why is your map not working? – An introduction to mapping in Tableau</h3>
+                </div>
+                <div class="cards-midddle tracking-tighter text-gray-400 mb-4">
+                    <h4>Understand how Tableau maps work and find solutions to common problems.</h4>
+                </div>
+                <div class="cards-bottom">
+                    <div class="cards-date">
+                        <a href="#" class="block font-semibold uppercase text-sm hover:text-red-300"><span>Read post</span></a>
+                        <small class="text-xs">7 July 2021</small>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="cards-main p-4">
-            <div class="cards-head border rounded-xl shadow-xl w-full p-4">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
                 <div class="cards-top mb-4">
                     <h3 class="font-semibold text-gray-500 tracking-widest text-lg">DataCamp Conference session: Tips for building an effective data science portfolio</h3>
                 </div>
@@ -55,7 +71,7 @@
             </div>
         </div>
         <div class="cards-main p-4">
-            <div class="cards-head border rounded-xl shadow-xl w-full p-4">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
                 <div class="cards-top mb-4">
                     <h3 class="font-semibold text-gray-500 tracking-widest text-lg">Do you need to be a SQL expert as a Tableau developer?</h3>
                 </div>
@@ -65,12 +81,67 @@
                 <div class="cards-bottom">
                     <div class="cards-date">
                         <a href="#" class="block font-semibold uppercase text-sm hover:text-red-300"><span>Read post</span></a>
+                        <small class="text-xs">2 July 2021</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-main p-4">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
+                <div class="cards-top mb-4">
+                    <h3 class="font-semibold text-gray-500 tracking-widest text-lg">Do Good with Data: Let’s talk about TIL+</h3>
+                </div>
+                <div class="cards-midddle tracking-tighter text-gray-400 mb-4">
+                    <h4>How do you share your tech expertise to help drive social change? Benedetta Tagliaferri and Naledi Hollbruegge talk about TIL+ in this recorded presentation.</h4>
+                </div>
+                <div class="cards-bottom">
+                    <div class="cards-date">
+                        <a href="#" class="block font-semibold uppercase text-sm hover:text-red-300"><span>Read post</span></a>
                         <small class="text-xs">7 July 2021</small>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="cards-main p-4">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
+                <div class="cards-top mb-4">
+                    <h3 class="font-semibold text-gray-500 tracking-widest text-lg">Create a custom multiple values filter in Tableau with a Parameter Action</h3>
+                </div>
+                <div class="cards-midddle tracking-tighter text-gray-400 mb-4">
+                    <h4>Create a custom filter in Tableau to match your dashboard design, that lets you select and deselect multiple items.</h4>
+                </div>
+                <div class="cards-bottom">
+                    <div class="cards-date">
+                        <a href="#" class="block font-semibold uppercase text-sm hover:text-red-300"><span>Read post</span></a>
+                        <small class="text-xs">28 June 2021</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-main p-4">
+            <div class="cards-head border rounded-xl shadow-sm hover:shadow-xl w-full p-4">
+                <div class="cards-top mb-4">
+                    <h3 class="font-semibold text-gray-500 tracking-widest text-lg">Dual axis mapping in Tableau with custom and generated coordinates</h3>
+                </div>
+                <div class="cards-midddle tracking-tighter text-gray-400 mb-4">
+                    <h4>How to set up your Tableau map with custom and generated coordinates (versions 2018.1 – 2020.3)</h4>
+                </div>
+                <div class="cards-bottom">
+                    <div class="cards-date">
+                        <a href="#" class="block font-semibold uppercase text-sm hover:text-red-300"><span>Read post</span></a>
+                        <small class="text-xs">24 June 2021</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <div class="footer border-t-2 mt-8 mb-8 px-4 flex justify-evenly">
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" class="w-10 mt-8"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=60688&format=png&color=000000" alt="" class="w-10 mt-8"></a>
+        </div>
+    </footer>
 
 </body>
 
