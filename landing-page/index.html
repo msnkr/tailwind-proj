@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div class="main-content">
+    <div class="main-content md:flex lg:flex items-center">
         <main class="container px-8 py-6">
             <div class="my-8">
-                <h2 class="text-gray-500 text-xl tracking-wide mb-2">Recent Project</h2>
-                <h1 class="text=gray-700 text-4xl tracking-wider my-4">Waterview residence</h1>
-                <h4 class="text-gray-500 text-md tracking-tighter mb-4">Inspired by the vast ocean views, our goal was to bring the outside in wherever possible in this full renovation</h4>
-                <button class="bg-black text-white p-4 rounded-md">View Projects</button>
+                <h2 class="text-gray-500 text-xl lg:text-4xl tracking-wide mb-2 xl:text-6xl">Recent Project</h2>
+                <h1 class="text=gray-700 text-4xl tracking-wider lg:text-6xl my-4 xl:text-10xl xl:mt-5 text-bold">
+                    Waterview residence</h1>
+                <h4 class="text-gray-500 text-md tracking-tighter mb-4 xl:text-2xl xl:mt-4">Inspired by the vast ocean
+                    views, our goal was
+                    to bring the outside in wherever possible in this full renovation</h4>
+                <button class="bg-black text-white p-4 rounded-md xl:mt-4">View Projects</button>
             </div>
         </main>
-        <div class="image">
-            <img src="https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="">
+        <div class="image md:mt-14">
+            <img src="https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="rounded-lg">
         </div>
-        <div class="card-content mt-8 px-8">
-            <div class="card-start">
-                <div class="card w-72">
-                    <div class="card-top">
-                        <h4 class="text-gray-500 text-md tracking-tighter mb-2">Architecture</h4>
-                    </div>
-                    <div class="card-middle tracking-tighter">
-                        <p>We believe in the power of architecture to enhance our lives and the cities in which we live. Now and in the future.</p>
-                    </div>
-                    <div class="card-bottom flex mt-2">
-                        <h4 class="text-gray-500 uppercase text-xs border-b-2 tracking-tighter"><a href="#">Architectural projects</a></h4>
-                    </div>
+    </div>
+
+    <div class="card-container px-8 mt-8 md:grid grid-cols-3 gap-12 items-center">
+        <div class="card-start mt-8">
+            <div class="card-head text-gray-600 tracking-wide text-lg my-2 xl:text-2xl">Architecture</div>
+            <div class="card-body text-gray-500 text-md tracking-tighter xl:text-lg">Embracing the serene beauty of waterfront
+                living, waterside homes are designed to harmonize with their natural surroundings</div>
+            <div class="flex">
+                <div class="card-bottom uppercase text-sm tracking-tighter border-b-2 mt-2 xl:text-md"><a href="#">Architecture</a>
                 </div>
             </div>
         </div>
+        <div class="card-start mt-8">
+            <div class="card-head text-gray-600 tracking-wide text-lg my-2 xl:text-2xl">Interiors</div>
+            <div class="card-body text-gray-500 text-md tracking-tighter xl:text-lg">Designed to complement the tranquil beauty of
+                waterfront living, waterside interiors often feature open floor plans and large windows to capture
+                stunning water views.</div>
+            <div class="flex">
+                <div class="card-bottom uppercase text-sm tracking-tighter border-b-2 mt-2 xl:text-md"><a href="#">Interrior Design
+                        projects</a></div>
+            </div>
+        </div>
+        <div class="card-start mt-8">
+            <div class="card-head text-gray-600 tracking-wide text-lg my-2 xl:text-2xl">About</div>
+            <div class="card-body text-gray-500 text-md tracking-tighter xl:text-lg">Designed to capture the essence of coastal
+                living, seaside view interiors feature expansive windows and open layouts that frame breathtaking ocean
+                vistas</div>
+            <div class="flex">
+                <div class="card-bottom uppercase text-sm tracking-tighter border-b-2 mt-2 xl:text-md"><a href="#">About</a></div>
+            </div>
+        </div>
     </div>
+
+    <div class="about-section mt-12 px-8">
+        <div class="about">
+            <h4 class="text-gray-500 tracking-wider text-2xl xl:text-semibold xl:px-8">Designed to capture the essence of coastal living, seaside
+                view interiors feature expansive windows and open layouts that frame breathtaking ocean vistas. Natural
+                materials like driftwood, stone, and glass are used to create a harmonious blend with the seaside
+                environment. Soft, airy color palettes and nautical-inspired decor enhance the tranquil and refreshing
+                atmosphere. These interiors are crafted to provide a serene and inviting retreat, where the beauty of
+                the sea is always in view.</h4>
+        </div>
+        <div class="read-more flex justify-center mt-8">
+            <button><a href="#" class="bg-black text-white p-4 rounded text-bold">Read more</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="bg-red-300 w-full h-24 my-12 xl:bg-green-300"></div>
+        </div>
+    </footer>
+    <div class="mt-8"></div>
 </body>
+
 </html>
