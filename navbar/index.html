@@ -7,15 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="nav-bar-content">
-        <nav>
-            <ul class="bg-gray-200">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+    <div class="nav-bar-content mt-8">
+        <nav class="justify-end mr-8 text-end">
+            <div class="burger-icon flex justify-end mb-4 hover:animate-bounce md:hidden">
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>                  
+            </div>
+            <ul class="font-semibold tracking-wider text-xl nav-items hidden md:display md:flex justify-end space-x-8 items-center">
+                <li><a href="#" class="hover:border-b-4">Home</a></li>
+                <li><a href="#" class="hover:border-b-4">Projects</a></li>
+                <li><a href="#" class="hover:border-b-4">About</a></li>
+                <li><a href="#" class="hover:border-b-4">Contact</a></li>
             </ul>
         </nav>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
