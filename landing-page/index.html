@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body>
+<body style="font-family: Montserrat;">
     <div class="main-content md:flex lg:flex items-center">
         <main class="container px-8 py-6">
             <div class="my-8">
                 <h2 class="text-gray-500 text-2xl lg:text-4xl tracking-wide mb-2 xl:text-6xl">Recent Project</h2>
-                <h1 class="text=gray-700 text-5xl tracking-wider lg:text-xl my-4 xl:text-10xl xl:mt-5 font-bold">
+                <h1 class="text=gray-700 text-5xl tracking-wider lg:text-xl my-4 xl:text-10xl xl:mt-5 font-bold ">
                     Waterview residence</h1>
                 <h4 class="text-gray-500 text-md tracking-tighter mb-4 xl:text-2xl xl:mt-4">Inspired by the vast ocean
                     views, our goal was
                     to bring the outside in wherever possible in this full renovation</h4>
-                <button class="bg-white text-black p-4 rounded-md xl:mt-4 hover:bg-black hover:text-white font-bold">View Projects</button>
+                <button class="bg-white text-black p-4 rounded-md xl:mt-4 hover:bg-black hover:text-white font-bold animate-pulse">View Projects</button>
             </div>
         </main>
-        <div class="image md:mt-14">
+        <div class="image md:mt-14 relative">
             <img src="https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="" class="rounded-lg">
+                <h1 class="absolute bottom-4 left-4 text-white font-semibold tracking-wider bg-gray-800 opacity-75 p-2 rounded-full">Seaside Villa</h1>
         </div>
     </div>
 
@@ -68,26 +72,26 @@
                 the sea is always in view.</h4>
         </div>
         <div class="read-more flex my-8">
-            <button><a href="#" class="bg-white text-black p-4 rounded-md xl:mt-4 hover:bg-black hover:text-white font-bold">Read more</a></button>
+            <button><a href="#" class="bg-white text-black p-4 rounded-md xl:mt-4 hover:bg-black hover:text-white font-bold hover:animate-pulse">Read more</a></button>
         </div>
     </div>
 
     <footer>
-        <div class="footer px-8 flex justify-evenly lg:justify-between lg:px-10">
+        <div class="footer px-8 flex justify-evenly lg:justify-around lg:px-10">
             <div>
                 <ul class="py-2">
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">123 Somewhere</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">Summer Street</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">Spring Avenue</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">2009</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">123 Somewhere</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">Summer Street</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">Spring Avenue</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">2009</li>
                 </ul>
             </div>
             <div class="px-8">
                 <ul class="py-2 text-end">
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">Someone@waterview.co.uk</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">011 123 4567</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">012 345 6789</li>
-                    <li class="text-gray-500 font-semibold pt-1 lg:text-2xl">XXXXXXXXXXX</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">Someone@waterview.co.uk</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">011 123 4567</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">012 345 6789</li>
+                    <li class="text-gray-500 font-semibold pt-1 text-sm lg:text-1xl">XXXXXXXXXXX</li>
                 </ul>
             </div>
         </div>
