@@ -10,124 +10,52 @@
 </head>
 
 <body>
-    <div class="text-gray-600 font-custom">
-        <!-- Content Wrapper -->
-        <div class="md:grid grid-cols-3 md:bg-yellow-300">
-            <!-- Navbar -->
-            <nav class="">
-                <div class="col-span-1">
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/" class="hover:text-gray-700">Food Ninja</a>
-                    </h1>
-                </div>
-                <ul>
-                    <li class="text-gray-700 font-bold">
-                        <a href="#"><span>Home</span></a>
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+    <div class="main-container">
+        <div class="top-container">
+            <div class="container">
+                <div class="top-nav flex justify-between align-center">
+                    <h1 class="mt-8 text-2xl text-grey-400 bold tracking-widest uppercase">Food Ninja</h1>
+                    <div class="burger-icon">
+                        <svg class="w-8 mt-8 mr-8 text-gray-400 animate-bounce" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd" />
                         </svg>
-                    </li>
-                    <li>
-                        <a href="#"><span>About</span></a>
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                        </svg>
-                    </li>
-                    <li>
-                        <a href="#"><span>Contact</span></a>
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                        </svg>
-
-                    </li>
-                </ul>
-            </nav>
-            <main class="px-16 py-6 bg-gray-100 col-span-2">
-                <div class="flex justify-center md:justify-end ml-2 space-x-2">
-                    <a href="#"
-                        class="text-red-300 text-xs font-semibold uppercase trackind-wider px-2 py-2 border-red-300 md:border-2 rounded-full hover:bg-red-300 hover:text-white">Log
-                        in</a>
-                    <a href="#"
-                        class="text-red-300 text-xs font-semibold uppercase trackind-wider px-2 py-2 border-red-300 md:border-2 rounded-full hover:bg-red-300 hover:text-white">Sign
-                        up</a>
-                </div>
-                <header>
-                    <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-                    <h3 class="text-2xl font-semibold">For ninjas</h3>
-                </header>
-
-                <div>
-                    <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest recipes</h4>
-
-                    <div class="mt-8 md:grid grid-cols-3 gap-8">
-                        <div class="card relative hover:shadow-lg">
-                            <img src="/ninja-recipe/img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">5 Bean Chilli stew</span>
-                                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                            </div>
-                            <div
-                                class="bg-gray-100 text-gray-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex">
-                                <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>25 mins</span>
-                            </div>
-                        </div>
-                        <div class="card relative hover:shadow-lg">
-                            <img src="/ninja-recipe/img/noodles.jpg" alt="noodles"
-                                class="w-full h-32 sm:h-48 object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">Veg Noodles</span>
-                                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                            </div>
-                            <div
-                                class="bg-gray-100 text-gray-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex">
-                                <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>25 mins</span>
-                            </div>
-                        </div>
-                        <div class="card relative hover:shadow-lg">
-                            <img src="/ninja-recipe/img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">Tofu Curry</span>
-                                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                            </div>
-                            <div
-                                class="bg-gray-100 text-gray-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex">
-                                <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>25 mins</span>
-                            </div>
+                        <div class="nav-items mr-8">
+                            <nav>
+                                <ul class="space-y-2 text-end text-gray-400">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/">Recipe</a></li>
+                                    <li><a href="/">About</a></li>
+                                    <li><a href="/">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
-                <div class="flex justify-center">
-                    <h4
-                        class="font-bold mt-12 py-2 px-2 uppercase text-xs font-bold border-gray-500 bg-gray-200 rounded-full trackind-wider hover:shadow-inner">
-                        <a href="#">Load More</a>
-                    </h4>
+            </div>
+        </div>
+        <div class="middle-container bg-gray-100">
+            <div class="links">
+                <div class="link flex justify-center mt-8 space-x-6 text-lg">
+                    <a href="#"
+                        class="border border-gray-100 hover:border hover:border-red-300 p-2 rounded-full text-red-400">Log
+                        in</a>
+                    <a href="#"
+                        class="border border-gray-100 hover:border hover:border-red-300 p-2 rounded-full text-red-400">Sign
+                        up</a>
                 </div>
-            </main>
+            </div>
+            <div class="middle-middle">
+                <div class="text space-y-2 text-center ">
+                    <h1 class="text-4xl">Recipes</h1>
+                    <h3 class="text-xl">For Ninjas</h3>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-
 
 </html>
