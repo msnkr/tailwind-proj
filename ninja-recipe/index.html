@@ -12,11 +12,11 @@
 <body>
     <div class="main-container">
         <div class="top-container">
-            <div class="container">
+            <div class="container p-8">
                 <div class="top-nav flex justify-between align-center">
-                    <h1 class="mt-8 text-2xl text-grey-400 bold tracking-widest uppercase">Food Ninja</h1>
+                    <h1 class="text-2xl text-grey-400 bold tracking-widest uppercase">Food Ninja</h1>
                     <div class="burger-icon">
-                        <svg class="w-8 mt-8 mr-8 text-gray-400 animate-bounce" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="w-8 text-gray-400 animate-bounce" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="currentColor" class="size-6">
                             <path fill-rule="evenodd"
                                 d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
@@ -24,7 +24,7 @@
                         </svg>
                         <div class="nav-items mr-8">
                             <nav>
-                                <ul class="space-y-2 text-end text-gray-400">
+                                <ul class="space-y-2 text-end text-gray-400 hidden">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/">Recipe</a></li>
                                     <li><a href="/">About</a></li>
@@ -37,10 +37,10 @@
             </div>
         </div>
         <div class="middle-container bg-gray-100">
-            <div class="links">
-                <div class="link flex justify-center mt-8 space-x-6 text-lg">
+            <div class="links mb-6">
+                <div class="link flex justify-center space-x-6 text-lg">
                     <a href="#"
-                        class="border border-gray-100 hover:border hover:border-red-300 p-2 rounded-full text-red-400">Log
+                        class="border border-gray-100 hover:border border-2 hover:border-red-300 hover:border-2 p-2 rounded-full text-red-400">Log
                         in</a>
                     <a href="#"
                         class="border border-gray-100 hover:border hover:border-red-300 p-2 rounded-full text-red-400">Sign
@@ -48,18 +48,141 @@
                 </div>
             </div>
             <div class="middle-middle">
-                <div class="text space-y-2 text-center font-semibold tracking-wider">
-                    <h1 class="text-4xl text-gray-500">Recipes</h1>
+                <div class="text space-y-2 font-semibold tracking-wider px-8">
+                    <h1 class="text-6xl text-gray-500">Recipes</h1>
                     <h3 class="text-xl text-gray-400">For Ninjas</h3>
                 </div>
-                <div class="cards-container mt-8">
-                    <h3 class="text-center text-gray-400 font-semibold">Most Popular</h3>
-                    <div class="cards-start">
-                        <div class="cards">
-                            <div class="card-top">
-                                <img src="./img/stew.jpg" alt="" class="">
+                <div class="cards-container p-8">
+                    <h3 class="text-center text-gray-400 font-semibold mb-2">Most Popular</h3>
+                    <div class="cards-start items-center">
+                        <div class="cards w-72 border rounded-lg shadow-lg">
+                            <div class="card-top relative">
+                                <img src="./img/stew.jpg" alt="" class="object-none">
+                                <div class="badges absolute top-2 left-2 flex">
+                                    <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                        <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                                </div>
+                                    </div>
                             </div>
-                            <div class="card-bottom"></div>
+                            <div class="card-bottom bg-white p-4">
+                                <h3 class="text-xl font-semibold text-gray-400">5 Bean Chili Stew</h3>
+                                <h4 class="text-md">Recipe by Mario</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-start items-center mt-8">
+                        <div class="cards w-72 border rounded-lg shadow-lg">
+                            <div class="card-top relative">
+                                <img src="./img/noodles.jpg" alt="" class="object-none">
+                                <div class="badges absolute top-2 left-2 flex">
+                                    <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                        <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                                </div>
+                                    </div>
+                            </div>
+                            <div class="card-bottom bg-white p-4">
+                                <h3 class="text-xl font-semibold text-gray-400">Spicy Noodles</h3>
+                                <h4 class="text-md">Recipe by Mario</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-start items-center mt-8">
+                        <div class="cards w-72 border rounded-lg shadow-lg">
+                            <div class="card-top relative">
+                                <img src="./img/curry.jpg" alt="" class="object-none">
+                                <div class="badges absolute top-2 left-2 flex">
+                                    <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                        <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                                </div>
+                                    </div>
+                            </div>
+                            <div class="card-bottom bg-white p-4">
+                                <h3 class="text-xl font-semibold text-gray-400">Lemon Curry</h3>
+                                <h4 class="text-md">Recipe by Mario</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container bg-gray-100">
+            <div class="cards-container p-8">
+                <h3 class="text-center text-gray-400 font-semibold mb-2">Latest Recipes</h3>
+                <div class="cards-start items-center">
+                    <div class="cards w-72 border rounded-lg shadow-lg">
+                        <div class="card-top relative">
+                            <img src="./img/stew.jpg" alt="" class="object-none">
+                            <div class="badges absolute top-2 left-2 flex">
+                                <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                    <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                            </div>
+                                </div>
+                        </div>
+                        <div class="card-bottom bg-white p-4">
+                            <h3 class="text-xl font-semibold text-gray-400">5 Bean Chili Stew</h3>
+                            <h4 class="text-md">Recipe by Mario</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-start items-center mt-8">
+                    <div class="cards w-72 border rounded-lg shadow-lg">
+                        <div class="card-top relative">
+                            <img src="./img/noodles.jpg" alt="" class="object-none">
+                            <div class="badges absolute top-2 left-2 flex">
+                                <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                    <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                            </div>
+                                </div>
+                        </div>
+                        <div class="card-bottom bg-white p-4">
+                            <h3 class="text-xl font-semibold text-gray-400">Spicy Noodles</h3>
+                            <h4 class="text-md">Recipe by Mario</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-start items-center mt-8">
+                    <div class="cards w-72 border rounded-lg shadow-lg">
+                        <div class="card-top relative">
+                            <img src="./img/curry.jpg" alt="" class="object-none">
+                            <div class="badges absolute top-2 left-2 flex">
+                                <div class="badge flex bg-teal-100 p-2 rounded-full">
+                                    <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <p class="text-xs font-semibold uppercase tracking-">25 Min</p>
+                            </div>
+                                </div>
+                        </div>
+                        <div class="card-bottom bg-white p-4">
+                            <h3 class="text-xl font-semibold text-gray-400">Lemon Curry</h3>
+                            <h4 class="text-md">Recipe by Mario</h4>
                         </div>
                     </div>
                 </div>
