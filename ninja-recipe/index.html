@@ -13,11 +13,15 @@
     <div class="main-container lg:grid grid-cols-3 col-span-1">
         <div class="top-container">
             <div class="container p-8">
-                <div class="top-nav flex text-start items-center">
-                    <h1 class="text-2xl text-grey-400 bold tracking-widest uppercase lg:text-4xl">Food Ninja</h1>
+                <div class="top-nav flex justify-between">
+                    <h1 class="text-2xl text-gray-400 bold tracking-widest uppercase lg:text-4xl">Food Ninja</h1>
                     <div class="burger-icon">
+                        <svg class="w-8 animate-bounce text-gray-400 lg:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
                         <div class="nav-items mr-8">
-                            <nav class="">
+                            <nav class="hidden lg:block">
                                 <ul class="space-y-2 text-end text-gray-400 lg:text-xl lg:font-semibold">
                                     <li class="flex"><a href="/">Home</a>
                                         <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -58,14 +62,16 @@
                 </div>
             </div>
             <div class="middle-middle ">
-                <div class="text space-y-2 font-semibold tracking-wider px-8">
+                <div class="text-center space-y-2 font-semibold tracking-wider px-8">
                     <h1 class="text-6xl text-gray-500">Recipes</h1>
                     <h3 class="text-xl text-gray-400">For Ninjas</h3>
                 </div>
-                <h3 class="text-center text-gray-400 font-semibold">Most Popular</h3>
-                <div class="cards-container p-8 md:pt-2  md:grid grid-cols-3 gap-4">
-                    <div class="cards-start items-center">
-                        <div class="cards w-72 md:w-full border rounded-lg shadow-lg">
+                <h3 class="text-center text-gray-400 font-semibold mt-8">Most Popular</h3>
+                <div class="cards-container md:pt-2 md:grid grid-cols-3 gap-4">
+
+
+                    <div class="cards-start mt-2">
+                        <div class="cards w-72 md:w-full border rounded-xl shadow-lg hover:shadow-xl">
                             <div class="card-top relative">
                                 <img src="./img/stew.jpg" alt="" class="object-none md:object-cover">
                                 <div class="badges absolute top-2 left-2 flex">
@@ -86,7 +92,7 @@
                         </div>
                     </div>
                     <div class="cards-start items-center mt-8 md:mt-0">
-                        <div class="cards w-72 md:w-full border rounded-lg shadow-lg">
+                        <div class="cards w-72 md:w-full border rounded-xl shadow-lg hover:shadow-xl">
                             <div class="card-top relative">
                                 <img src="./img/noodles.jpg" alt="" class="object-none md:object-cover">
                                 <div class="badges absolute top-2 left-2 flex">
@@ -107,7 +113,7 @@
                         </div>
                     </div>
                     <div class="cards-start items-center mt-8 md:mt-0">
-                        <div class="cards w-72 md:w-full border rounded-lg shadow-lg">
+                        <div class="cards w-72 md:w-full border rounded-xl shadow-lg hover:shadow-xl">
                             <div class="card-top relative">
                                 <img src="./img/curry.jpg" alt="" class="object-none md:object-cover">
                                 <div class="badges absolute top-2 left-2 flex">
