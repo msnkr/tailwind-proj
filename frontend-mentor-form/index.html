@@ -1,1 +1,55 @@
 <!-- https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1d3557',
+                        secondary: '#a8dadc',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background bg-gray-100 p-8">
+        <form action="/" class="bg-white p-4 rounded-lg">
+            <h3 class="text-xl text-gray-600 mb-4">Contact Us</h3>
+            <div class="form-div md:flex justify-between mx-4">
+                <div class="fname">
+                    <label for="fname" class="text-gray-500">First Name *</label> <br>
+                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full">
+                </div>
+                <div class="lname mt-2">
+                    <label for="lname" class="text-gray-500">Last Name *</label><br>
+                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full">
+                </div>
+            </div>
+            <div class="email mt-4 mx-4">
+                <label for="email" class="text-gray-500">Email Address *</label><br>
+                <input type="email" name="" id="" class="border-2 rounded-lg w-full hover:border-gray-300">
+            </div>
+            <div class="query-type p-4">
+                <label for="query-type">Query Type *</label><br>
+                <div class="button-parent md:flex mt-2">
+                    <div class="button-div border-2 p-2 rounded-lg">
+                        <input type="radio" name="" id=""> <label for="text" class="ml-2">General Enquiry</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
