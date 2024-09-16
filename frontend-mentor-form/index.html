@@ -24,16 +24,16 @@
 
 <body>
     <div class="background bg-gray-100 p-8">
-        <form action="/" class="bg-white p-4 rounded-lg text-gray-500">
+        <form action="/" class="bg-white p-4 rounded-lg text-gray-500 md:m-8">
             <h3 class="text-xl text-gray-600 mb-4">Contact Us</h3>
             <div class="form-div md:flex justify-between mx-8">
                 <div class="fname">
                     <label for="fname" class="">First Name *</label> <br>
-                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full p-2">
+                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full p-2 md:w-72">
                 </div>
                 <div class="lname">
                     <label for="lname" class="">Last Name *</label><br>
-                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full p-2">
+                    <input type="text" name="" id="" class="rounded-lg border-2 hover:border-gray-300 w-full p-2 md:w-72">
                 </div>
             </div>
             <div class="email mt-4 mx-8">
@@ -42,25 +42,25 @@
             </div>
             <div class="query-type mx-8 mt-4">
                 <label for="query-type">Query Type *</label><br>
-                <div class="button-parent md:flex mt-2">
-                    <div class="button-div border-2 p-2 rounded-lg">
+                <div class="button-parent md:flex mt-2 justify-between">
+                    <div class="button-div border-2 p-2 rounded-lg md:w-full mx-2">
                         <input type="radio" name="query" id=""> <label for="text" class="ml-2">General Enquiry</label>
                     </div>
-                    <div class="button-div border-2 p-2 rounded-lg mt-2">
+                    <div class="button-div border-2 p-2 rounded-lg md:w-full mx-2">
                         <input type="radio" name="query" id=""> <label for="text" class="ml-2">Support Ticket</label>
                     </div>
                 </div>
             </div>
             <div class="message-div mx-8 mt-4">
                 <label for="text">Message *</label><br>
-                <textarea name="" id="" cols="40" rows="10" class="border-2 rounded-lg"></textarea>
+                <textarea name="" id="" rows="4" class="border-2 rounded-lg w-full"></textarea>
             </div>
             <div class="checkbox-div flex mx-8 mt-4">
                 <input type="checkbox" name="" id="" class=""> <br>
                 <label for="" class="text-lg text-gray-500 ml-4">I consent to being contacted by the team *</label>
             </div>
             <div class="button-div mx-8 mt-4">
-                <button type="submit" class="bg-green-600 text-white w-full py-8 rounded-lg text-2xl font-semibold">Submit</button>
+                <button type="submit" class="bg-green-600 text-white w-full py-6 rounded-lg text-2xl font-semibold">Submit</button>
             </div>
         </form>
     </div>
