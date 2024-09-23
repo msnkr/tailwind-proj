@@ -1,0 +1,83 @@
+<!-- https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E6EFF6',
+                        secondary: "#2BB3B1",
+                        third: "#4ABDC0",
+                        fourth: "#BFDF32"
+                    }
+                }, fontFamily: {
+                    custom: ["Poppins"]
+                }
+            }
+        }
+    </script>
+    <title>Single Price Grid</title>
+</head>
+
+<body class="font-custom">
+    <div class="main-container p-4 bg-primary">
+        <div class="container">
+            <div class="call-to-action p-8">
+                <div class="top-container border bg-white py-8 rounded-t-xl p-4">
+                    <div class="heading-top">
+                        <h1 class="text-secondary tracking-wider font-semibold text-2xl">Join our community!</h1>
+                    </div>
+                    <div class="heading-middle mt-4">
+                        <h2 class="text-fourth tracking-wide">30 day, hassle-free money back guarantee</h2>
+                    </div>
+                    <div class="heading-bottom mt-4 ">
+                        <h4 class="tracking-tighter leading-4 text-gray-400">Gain access to our full library of
+                            tutorials along with expert code reviews. <br>Perfect for any developers who are serious
+                            about honing their skills. </h4>
+                    </div>
+                </div>
+                <div class="bottom-container text-white">
+                    <div class="left-container bg-secondary p-8">
+                        <h4 class="tracking-wide">Monthly Subscription</h4>
+                        <div class="per-month flex items-center">
+                            <h4 class="font-semibold text-5xl">29$</h4>
+                            <p class="ml-2">per month</p>
+                        </div>
+                        <div class="bottom-container-end mt-4">
+                            <p class="block">Full access for less that $1 a day</p>
+                        </div>
+                        <button class="btn bg-fourth w-full p-2 text-2xl font-bold rounded-xl mt-4">Sign Up</button>
+                    </div>
+                    <div class="right-container bg-third py-4 rounded-b-xl">
+                        <div class="heading">
+                            <h1 class="text-2xl px-8 py-4">Why Us</h1>
+                        </div>
+                        <div class="text px-8 space-y-1 tracking-tight leading-4">
+                            <p>Tutorials by industry experts</p>
+                            <p>Peer and expert code review</p>
+                            <p>Coding exercises</p>
+                            <p>Access to our Github repos</p>
+                            <p>Community forum</p>
+                            <p>Flashcard decks</p>
+                            <p>New videos every week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
