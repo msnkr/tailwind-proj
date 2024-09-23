@@ -11,13 +11,14 @@ function isValidEmail(email) {
 
 
 btn.addEventListener("click", () => {
-    const toggleClasses = (add) => {
-        errorMessage.classList.toggle("opacity-100", add);
-        inputText.classList.toggle("bg-red-100", add);
-        inputText.classList.toggle("text-red-400", add);
-        inputBorder.classList.toggle("bg-red-100", add);
-        inputBorder.classList.toggle("border-red-100", add);
-    };
-
-    toggleClasses(!isValidEmail(inputText.value));
+    if (isValidEmail(inputText.value)) {
+        console.log("pass")
+    } else {
+        errorMessage.classList.toggle("opacity-100");
+        inputBorder.classList.toggle("border-red-100");
+        inputBorder.classList.toggle("bg-red-100");
+        inputText.classList.toggle("bg-red-100");
+        inputText.classList.toggle("text-red-400");
+    }
 });
+
