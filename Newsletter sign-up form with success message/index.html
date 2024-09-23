@@ -29,10 +29,11 @@
 </head>
 
 <body class="md:bg-primary">
-    <div class="main-containerp-8 md:flex justify-center md:mt-[100px]">
+    <div class="main-container p-8 md:flex justify-center md:mt-[100px]">
         <div class="container md:bg-white rounded-xl p-4 lg:flex flex-row-reverse">
             <div class="main-container">
-                <img src="./pexels-goumbik-590037.jpg" alt="" class="w-full h-[200px] object-cover md:rounded-xl lg:h-[600px]">
+                <img src="./pexels-goumbik-590037.jpg" alt=""
+                    class="w-full h-[200px] object-cover md:rounded-xl lg:h-[600px]">
             </div>
             <div class="container p-9 lg:flex items-center">
                 <div class="wording-container mt-6 ml-6">
@@ -85,16 +86,44 @@
                             <div class="label">
                                 <label for="email" class="text-xs">Email address *</label>
                             </div>
-                            <div><small class="wrong-email text-xs text-red-400 opacity-0 transistion duration-500">Valid email required</small></div>
+                            <div><small
+                                    class="wrong-email text-xs text-red-400 opacity-0 transistion duration-500">Valid
+                                    email required</small></div>
                         </div>
                         <div class="input-div mt-1 border border-2 p-2 rounded-xl border-primary">
-                            <input type="email" name="" id="" placeholder="email@company.com" class="input w-full focus:outline-0" required>
+                            <input type="email" name="" id="" placeholder="email@company.com"
+                                class="input w-full focus:outline-0" required>
                         </div>
                     </div>
                     <div class="button-container">
                         <div class="button p-6 bg-primary mt-2 rounded-xl text-white font-semibold text-xl text-center">
                             <button type="submit">Subscribe to monthly newsletter</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="success-container p-8 flex justify-center hidden">
+        <div class="main-container bg-white p-8 rounded-xl w-[600px]">
+            <div class="container">
+                <div class="svg-container">
+                    <svg class="w-[150px] text-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="heading-container mt-8">
+                    <h1 class="text-primary text-6xl font-semibold">Thanks for <br> subscribing! </h1>
+                </div>
+                <div class="text-container mt-8">
+                    <h4 class="text-primary text-2xl">A confirmation email has been sent to <span class="font-bold email-name">XXX@XXXX.com</span>.Please open it and click the button inside to confirm your subscription</h4>
+                </div>
+                <div class="button-container mt-8">
+                    <div class="button p-6 bg-primary mt-2 rounded-xl text-white font-semibold text-3xl text-center">
+                        <button type="submit" class="uppercase dissmiss-btn">dismiss message</button>
                     </div>
                 </div>
             </div>
