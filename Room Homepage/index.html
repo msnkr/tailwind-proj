@@ -26,36 +26,67 @@
 
 <body class="font-custom">
     <div class="main-container">
-        <div class="container-1">
-            <div class="hero-container relative">
-                <div class="img-div">
-                    <img class="w-full h-full"
-                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                </div>
-                <div class="navbar-div">
-                    <div class="icon-container absolute top-4 left-4">
-                        <svg class="text-white w-[40px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
+        <div class="hero-container md:flex">
+            <div class="container-1">
+                <div class="hero-container relative">
+                    <div class="img-div md:w-[500px]">
+                        <img class="w-full h-full"
+                            src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
                     </div>
-                    <div class="logo-div absolute top-4 right-4 text-white font-semibold text-xl">
-                        <h1>Home</h1>
+                    <div class="navbar-div flex flex-row-reverse md:flex-row absolute top-4 left-4">
+                        <div
+                            class="logo-div text-white font-semibold text-2xl uppercase tracking-widest">
+                            <h1 class="mt-1 ml-[150px] md:ml-0">Home</h1>
+                        </div>
+                        <div class="icon-container">
+                            <svg class="text-white md:hidden w-[40px] cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            <ul class="md:flex space-x-3 text-white font-semibold hidden md:block md:mt-2 md:ml-[100px]">
+                                <li>home</li>
+                                <li>furniture</li>
+                                <li>about</li>
+                                <li>contact</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-div flex absolute right-0 bottom-0">
-                    <div class="button-left bg-black text-white text-bold px-5 py-2 cursor-pointer">
-                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-                        </svg>
+                    <div class="slider-div flex absolute right-0 bottom-0">
+                        <div class="button-left bg-black text-white text-bold px-5 py-2 cursor-pointer">
+                            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                            </svg>
 
+                        </div>
+                        <div class="button-right bg-black text-white text-bold px-5 py-2 cursor-pointer">
+                            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="button-right bg-black text-white text-bold px-5 py-2 cursor-pointer">
-                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="wording-container p-6 mt-4">
+                    <div class="header-container">
+                        <h1 class="font-bold text-4xl tracking-wide">Discover innovative ways to decorate</h1>
+                    </div>
+                    <div class="text-container mt-4 tracking-tight text-gray-400 leading-6">
+                        <p>We provide unmatched quality, comfort, and style for property oweners across the country.
+                            <br>Our experts combine form and function in bringing your vision to lift. Create a room in
+                            your own style with our collection and make your property a reflection of you and what you
+                            love.
+                        </p>
+                    </div>
+                    <div class="button-container mt-4 md:mt-0 flex">
+                        <h3 class="uppercase tracking-widest text mt-3 mr-4 text-xl">Shop now</h3>
+                        <svg class="w-[50px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -64,40 +95,27 @@
                 </div>
             </div>
         </div>
-        <div class="container-2">
-            <div class="wording-container p-6 mt-4">
-                <div class="header-container">
-                    <h1 class="font-bold text-4xl tracking-wide">Discover innovative ways to decorate</h1>
-                </div>
-                <div class="text-container mt-4 tracking-tight text-gray-400 leading-6">
-                    <p>We provide unmatched quality, comfort, and style for property oweners across the country. <br>Our experts combine form and function in bringing your vision to lift. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
-                </div>
-                <div class="button-container mt-4 flex">
-                    <h3 class="uppercase tracking-widest text mt-3 mr-4 text-xl">Shop now</h3>
-                    <svg class="w-[50px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg>
-                </div>
-            </div>
-        </div>
-        <div class="container-3">
+        <div class="container-3 md:flex justify-evenly">
             <div class="img-container">
-                <img class="w-full" src="https://images.pexels.com/photos/5155218/pexels-photo-5155218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img class="w-full md:h-[300px] md:w-[1000px] object-cover"
+                    src="https://images.pexels.com/photos/5155218/pexels-photo-5155218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
             </div>
             <div class="wording-container p-6 mt-4">
                 <div class="header-container font-bold text-xl tracking-widest uppercase">
                     <h1>About our furniture</h1>
                 </div>
                 <div class="text-container mt-4 tracking-tight text-gray-400 leading-6">
-                    <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. <br>Find the furniture you need, from tradional to contemporary styles or anything in betweeeen. Product specialists are available to help you create your dream space.</p>
+                    <p>Our multifunctional collection blends design and function to suit your individual taste. Make
+                        each room unique, or pick a cohesive theme that best express your interests and what inspires
+                        you. <br>Find the furniture you need, from tradional to contemporary styles or anything in
+                        betweeeen. Product specialists are available to help you create your dream space.</p>
                 </div>
             </div>
-        </div>
-        <div class="container-4">
             <div class="img-container">
-                <img class="w-full" src="https://images.pexels.com/photos/5447128/pexels-photo-5447128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img class="w-full md:h-[300px] md:w-[1000px] object-cover"
+                    src="https://images.pexels.com/photos/5447128/pexels-photo-5447128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
             </div>
         </div>
     </div>
