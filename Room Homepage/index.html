@@ -17,7 +17,7 @@
                     fontFamily: {
                         custom: ["Poppins"]
                     },
-                    colors:{
+                    colors: {
                         primary: "#09140F",
                         secondary: "#183628"
                     }
@@ -25,24 +25,25 @@
             }
         }
     </script>
-    <title>HOME</title>
+    <title>Room Homepage</title>
 </head>
 
-<body class="font-custom ">
+<body class="font-custom">
     <div class="main-container">
         <div class="container-1">
             <div class="hero-image">
                 <div class="image-container relative">
                     <div class="navbar-container flex absolute text-white w-full top-4 px-6">
-                        <div class="burger-icon cursor-pointer">
+                        <div class="burger-icon cursor-pointer lg:hidden">
                             <svg class="w-[50px] font-bold" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </div>
-                        <div class="nav-list absolute mt-[50px] font-semibold hidden">
-                            <ul class="space-y-1 mt-4">
+                        <div
+                            class="nav-list absolute mt-[50px] lg:mt-0 font-semibold hidden lg:block lg:relative lg:mt-0">
+                            <ul class="space-y-1 lg:space-y-0 mt-4 lg:flex">
                                 <li class="cursor-pointer hover:bg-primary transistion duration-500 p-3">home
                                 </li>
                                 <li class="cursor-pointer hover:bg-primary transistion duration-500 p-3">
@@ -54,7 +55,7 @@
                             </ul>
                         </div>
                         <div class="home-logo m-auto">
-                            <h1 class="text-2xl tracking-wider">Home</h1>
+                            <h1 class="text-2xl tracking-wider font-semibold lowercase">Room</h1>
                         </div>
                     </div>
                     <div class="img">
@@ -62,32 +63,41 @@
                     </div>
                     <div class="buttons-container absolute right-0 bottom-0 flex">
                         <div class="button-left cursor-pointer">
-                            <h1 class="font-bold text-white text-4xl px-9 py-3 bg-secondary hover:bg-primary transition duration-500"><</h1>
+                            <h1
+                                class="font-bold text-white text-4xl px-9 py-3 bg-secondary hover:bg-primary transition duration-500">
+                                <</h1>
 
                         </div>
                         <div class="button-right cursor-pointer">
-                            <h1 class="font-bold text-white text-4xl px-9 py-3 bg-secondary hover:bg-primary transition duration-500">></h1>
+                            <h1
+                                class="font-bold text-white text-4xl px-9 py-3 bg-secondary hover:bg-primary transition duration-500">
+                                ></h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="wording-container p-8">
+            <div class="wording-container p-8 lg:w-[600px]">
                 <div class="wording">
                     <div class="heading">
                         <h1 class="text-4xl font-semibold text-primary">Discover innovative ways to decorate</h1>
                     </div>
                     <div class="text-container mt-4">
-                        <p class="text-gray-400 tracking-tight">We provide unmatched quality, comfort, and style for property oweners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+                        <p class="text-gray-400 tracking-tight">We provide unmatched quality, comfort, and style for
+                            property oweners across the country. Our experts combine form and function in bringing your
+                            vision to life. Create a room in your own style with our collection and make your property a
+                            reflection of you and what you love.</p>
                     </div>
                 </div>
                 <div class="button-container mt-2 flex place-items-center">
                     <div class="button mr-5">
                         <button class="uppercase tracking-widest font-semibold text-xl text-primary">Shop now</button>
                     </div>
-                    <svg class="w-[50px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                      </svg>
-                      
+                    <svg class="w-[50px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+
                 </div>
             </div>
         </div>
@@ -96,12 +106,17 @@
                 <img src="./pexels-pixabay-280471.jpg" alt="">
             </div>
             <div class="wording-container p-8 mt-4">
-                <div class="wording">
+                <div class="wording lg:w-[600px]">
                     <div class="heading">
-                        <h1 class="text-2xl font-semibold uppercase tracking-widest text-primary">about our furniture</h1>
+                        <h1 class="text-2xl font-semibold uppercase tracking-widest text-primary">about our furniture
+                        </h1>
                     </div>
                     <div class="text-container mt-4">
-                        <p class="text-gray-400 tracking-tight">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you.Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+                        <p class="text-gray-400 tracking-tight">Our multifunctional collection blends design and
+                            function to suit your individual taste. Make each room unique, or pick a cohesive theme that
+                            best express your interests and what inspires you.Find the furniture pieces you need, from
+                            traditional to contemporary styles or anything in between. Product specialists are available
+                            to help you create your dream space.</p>
                     </div>
                 </div>
             </div>
