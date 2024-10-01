@@ -12,60 +12,71 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0d1b2a',
-                        secondary: "#1b263b",
-                        third: "#e0e1dd"
+                        primary: '#1E1E2A',
+                        secondary: "#30243A",
+                        third: "#34364F",
+                        countdown: "#D64F6F",
+                        fourth: "#2C2C44",
+                        fifth: "#8386A9"
+                    },
+                    fontFamily: {
+                        custom: ["Poppins"]
                     }
                 }
             }
         }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Countdown</title>
 </head>
 
 <body>
-    <div class="main-container bg-primary h-dvh w-full text-third">
-        <div class="main-wrapper">
-            <div class="heading-container">
-                <div class="heading">
-                    <h1 class="uppercase text-4xl text-center font-semibold tracking-wide">We're launching <br>soon</h1>
+    <div class="main-container">
+        <div class="main bg-primary h-screen pt-[200px] font-custom">
+            <div class="heading-div">
+                <div class="heading text-4xl uppercase font-semibold text-center text-white">We're launching <br>soon
                 </div>
             </div>
-            <div class="countdown grid grid-cols-4 p-8">
-                <div class="block">
-                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
-                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+            <div class="flex space-x-[40px] text-white text-center mt-[100px] justify-center">
+                <div class="grid-items relative">
+                    <div class="grid-1 w-[120px] h-[60px] bg-fourth rounded-b-xl rounded-t-lg"></div>
+                    <div class="grid-2 w-[120px] h-[60px] bg-third rounded-t-xl rounded-b-lg"></div>
+                    <div class="wording">
+                        <h4 class="uppercase mt-2 text-fifth">days</h4>
                     </div>
-                    <h4 class="text-center uppercase text-md">days</h4>
+                    <div class="countdown text-8xl text-center absolute top-4 text-countdown">00</div>
                 </div>
-                <div class="block">
-                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
-                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                <div class="grid-items relative">
+                    <div class="grid-1 w-[120px] h-[60px] bg-fourth rounded-b-xl rounded-t-lg"></div>
+                    <div class="grid-2 w-[120px] h-[60px] bg-third rounded-t-xl rounded-b-lg"></div>
+                    <div class="wording">
+                        <h4 class="uppercase mt-2 text-fifth">hours</h4>
                     </div>
-                    <h4 class="text-center uppercase text-md">hours</h4>
+                    <div class="countdown text-8xl text-center absolute top-4 text-countdown">00</div>
                 </div>
-                <div class="block">
-                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
-                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                <div class="grid-items relative">
+                    <div class="grid-1 w-[120px] h-[60px] bg-fourth rounded-b-xl rounded-t-lg"></div>
+                    <div class="grid-2 w-[120px] h-[60px] bg-third rounded-t-xl rounded-b-lg"></div>
+                    <div class="wording">
+                        <h4 class="uppercase mt-2 text-fifth">minutes</h4>
                     </div>
-                    <h4 class="text-center uppercase text-md">minutes</h4>
+                    <div class="countdown text-8xl text-center absolute top-4 text-countdown">00</div>
                 </div>
-                <div class="block">
-                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
-                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                <div class="grid-items relative">
+                    <div class="grid-1 w-[120px] h-[60px] bg-fourth rounded-b-xl rounded-t-lg"></div>
+                    <div class="grid-2 w-[120px] h-[60px] bg-third rounded-t-xl rounded-b-lg"></div>
+                    <div class="wording">
+                        <h4 class="uppercase mt-2 text-fifth">seconds</h4>
                     </div>
-                    <h4 class="text-center uppercase text-md">seconds</h4>
-                </div>
-            </div>
-            <div class="footer-icons">
-                <div class="icons">
-                    <div class="icon-1"></div>
-                    <div class="icon-2"></div>
-                    <div class="icon-3"></div>
+                    <div class="countdown text-8xl text-center absolute top-4 text-countdown">00</div>
                 </div>
             </div>
         </div>
-    </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
