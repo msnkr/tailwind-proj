@@ -1,0 +1,71 @@
+<!-- https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d1b2a',
+                        secondary: "#1b263b",
+                        third: "#e0e1dd"
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Countdown</title>
+</head>
+
+<body>
+    <div class="main-container bg-primary h-dvh w-full text-third">
+        <div class="main-wrapper">
+            <div class="heading-container">
+                <div class="heading">
+                    <h1 class="uppercase text-4xl text-center font-semibold tracking-wide">We're launching <br>soon</h1>
+                </div>
+            </div>
+            <div class="countdown grid grid-cols-4 p-8">
+                <div class="block">
+                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
+                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                    </div>
+                    <h4 class="text-center uppercase text-md">days</h4>
+                </div>
+                <div class="block">
+                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
+                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                    </div>
+                    <h4 class="text-center uppercase text-md">hours</h4>
+                </div>
+                <div class="block">
+                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
+                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                    </div>
+                    <h4 class="text-center uppercase text-md">minutes</h4>
+                </div>
+                <div class="block">
+                    <div class="block-days w-[100px] h-[100px] bg-secondary rounded-lg relative">
+                        <h1 class="text-7xl w-[100px] h-[100px] text-center">00</h1>
+                    </div>
+                    <h4 class="text-center uppercase text-md">seconds</h4>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <div class="icons">
+                    <div class="icon-1"></div>
+                    <div class="icon-2"></div>
+                    <div class="icon-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
