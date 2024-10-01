@@ -1,6 +1,8 @@
 const images = document.querySelectorAll(".image"),
     rightBtn = document.querySelector(".right"),
-    leftBtn = document.querySelector(".left");
+    leftBtn = document.querySelector(".left"),
+    burgerIcon = document.querySelector(".burger-div"),
+    navList = document.querySelector(".ul-items");
 
 let idx = 0;
 
@@ -26,4 +28,8 @@ leftBtn.addEventListener("click", () => {
         idx = images.length - 1;
         images[idx].classList.toggle("hidden");
     }
+})
+
+burgerIcon.addEventListener("click", () => {
+    navList.classList.toggle("hidden");
 })
