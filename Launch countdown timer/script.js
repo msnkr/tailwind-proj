@@ -8,7 +8,8 @@ let daysDom = document.querySelector(".days"),
 let days = 2,
     hours = 12,
     minutes = 44,
-    seconds = 2;
+    seconds = 13;
+
 
 // Make a function that converts days, hours, minutes, seconds into milliseconds
 function convertToMilli(days, hours, minutes, seconds) {
@@ -20,19 +21,23 @@ function convertToMilli(days, hours, minutes, seconds) {
 timer = convertToMilli(days, hours, minutes, seconds)
 
 
+
 // Make a function that minuses the seconds
-// setInterval(() => {
-//     timer--;
-//     console.log(timer)
-// }, 1000)
+setInterval(() => {
+    updateDom(timer);
+    timer--;
+}, 1000)
+
+
+// Make a function with the logic
 
 
 // Make a function that displays the items on the screen in their correct place
 function updateDom(timer) {
-    daysDom.innerHTML = days;
-    hoursDom.innerHTML = hours;
-    minutesDom.innerHTML = minutes;
-    secondsDom.innerHTML = seconds;
+    daysDom.innerHTML = Math.floor(timer / 86400);
+    hoursDom.innerHTML = Math.floor(timer / 3600 % 24);
+    minutesDom.innerHTML = Math.floor(timer / 60 % 60);
+    secondsDom.innerHTML = Math.floor(timer % 60);
 }
 
-updateDom()
+
