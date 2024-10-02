@@ -5,29 +5,34 @@ let daysDom = document.querySelector(".days"),
     secondsDom = document.querySelector(".seconds");
 
 
-
+let days = 2,
+    hours = 12,
+    minutes = 44,
+    seconds = 2;
 
 // Make a function that converts days, hours, minutes, seconds into milliseconds
 function convertToMilli(days, hours, minutes, seconds) {
-    daysInSeconds = days * 24 * 60 * 60;
-    hoursInSeconds = hours * 60 * 60;
+    daysInSeconds = days * 86400
+    hoursInSeconds = hours * 3600
     minutesInSeconds = minutes * 60;
     return daysInSeconds + hoursInSeconds + minutesInSeconds + seconds;
 }
-timer = convertToMilli(2, 12, 52, 32)
+timer = convertToMilli(days, hours, minutes, seconds)
 
 
 // Make a function that minuses the seconds
 // setInterval(() => {
-//     seconds--;
-//     console.log(seconds)
+//     timer--;
+//     console.log(timer)
 // }, 1000)
 
 
 // Make a function that displays the items on the screen in their correct place
 function updateDom(timer) {
-
-    return
+    daysDom.innerHTML = days;
+    hoursDom.innerHTML = hours;
+    minutesDom.innerHTML = minutes;
+    secondsDom.innerHTML = seconds;
 }
 
 updateDom()
