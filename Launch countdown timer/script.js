@@ -28,10 +28,6 @@ setInterval(() => {
     timer--;
 }, 1000)
 
-
-// Make a function with the logic
-
-
 // Make a function that displays the items on the screen in their correct place
 function updateDom(timer) {
     daysDom.innerHTML = Math.floor(timer / 86400);
