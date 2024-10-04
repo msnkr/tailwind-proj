@@ -37,7 +37,8 @@
                         <img src="./images/icon-hamburger.svg" alt="" class="w-[40px]">
                     </div>
                     <div class="nav-items hidden lg:block">
-                        <ul class="nav-item bg-white space-y-2 mt-8 text-end mt-5 lg:flex lg:space-y-0 lg:space-x-4 lg:mt-0 lg:text-xl">
+                        <ul
+                            class="nav-item bg-white space-y-2 mt-8 text-end mt-5 lg:flex lg:space-y-0 lg:space-x-4 lg:mt-0 lg:text-xl">
                             <li>
                                 <p
                                     class="cursor-pointer border-b-2 border-white hover:border-primary transition ease-in-out duration-500">
@@ -81,14 +82,17 @@
             </div>
             <div class="hero-section">
                 <div class="hero">
-                    <div class="hero-container">
+                    <div class="hero-container lg:flex flex-row-reverse lg:items-center">
                         <div class="image-section relative">
                             <div class="image-1">
-                                <img src="./images/bg-intro-mobile.svg" alt="" class="w-full">
+                                <img src="./images/bg-intro-mobile.svg" alt="" class="w-full lg:hidden">
                             </div>
                             <div class="image-2">
                                 <img src="./images/image-mockups.webp" alt=""
-                                    class="absolute top-0 w-full h-[450px] object-cover object-[90%_100%]">
+                                    class="absolute top-0 w-full h-[450px] object-cover object-[90%_100%] lg:hidden">
+                            </div>
+                            <div class="image-3">
+                                <img src="./images/bg-intro-desktop.svg" alt="" class="hidden lg:block w-full h-[600px] object-cover object-[10%_20%]">
                             </div>
                         </div>
                         <div class="wording-section p-9">
