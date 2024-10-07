@@ -37,7 +37,8 @@
                         <img src="./images/icon-hamburger.svg" alt="" class="w-[40px]">
                     </div>
                     <div class="nav-items hidden xl:block justify-center">
-                        <ul class="nav-item bg-white space-y-2 mt-8 text-end mt-5 xl:flex xl:space-y-0 xl:space-x-6 xl:text-xl">
+                        <ul
+                            class="nav-item bg-white space-y-2 mt-8 text-end mt-5 xl:flex xl:space-y-0 xl:space-x-6 xl:text-xl">
                             <li>
                                 <p
                                     class="cursor-pointer border-b-2 border-white hover:border-primary transition ease-in-out duration-500">
@@ -81,14 +82,17 @@
             </div>
             <div class="hero-section">
                 <div class="hero">
-                    <div class="hero-container ">
-                        <div class="image-section relative">
+                    <div class="hero-container xl:flex flex-row-reverse xl:items-center">
+                        <div class="image-section relative bg-gray-100 xl:w-full">
                             <div class="image-1">
-                                <img src="./images/bg-intro-mobile.svg" alt="" class="w-full ">
+                                <img src="./images/bg-intro-mobile.svg" alt="" class="w-full xl:hidden">
                             </div>
                             <div class="image-2">
                                 <img src="./images/image-mockups.webp" alt=""
-                                    class="absolute top-0 w-full h-[450px] object-cover object-[90%_100%] ">
+                                    class="absolute top-0 w-full h-[450px] object-cover object-[90%_100%] xl:w-full h-full xl:object-contain">
+                            </div>
+                            <div class="image-3">
+                                <img src="./images/bg-intro-desktop.svg" alt="" class="hidden xl:block">
                             </div>
                         </div>
                         <div class="wording-section p-9">
