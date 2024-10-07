@@ -29,15 +29,15 @@
             <div class="navbar-section p-9 flex justify-between ">
                 <div class="logo">
                     <div class="logo-image">
-                        <img src="./images/logo.svg" alt="" class="w-[200px]">
+                        <img src="./images/logo.svg" alt="" class="w-[200px] xl:w-[500px]">
                     </div>
                 </div>
                 <div class="burger-icon flex flex-col place-items-end">
-                    <div class="icon">
+                    <div class="icon xl:hidden">
                         <img src="./images/icon-hamburger.svg" alt="" class="w-[40px]">
                     </div>
-                    <div class="nav-items hidden ">
-                        <ul class="nav-item bg-white space-y-2 mt-8 text-end mt-5">
+                    <div class="nav-items hidden xl:block justify-center">
+                        <ul class="nav-item bg-white space-y-2 mt-8 text-end mt-5 xl:flex xl:space-y-0 xl:space-x-6 xl:text-xl">
                             <li>
                                 <p
                                     class="cursor-pointer border-b-2 border-white hover:border-primary transition ease-in-out duration-500">
@@ -72,7 +72,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="button-container text-center hidden">
+                <div class="button-container text-center hidden xl:block">
                     <button
                         class="bg-gradient-to-r from-secondary to-gradient  text-white text-center p-5 rounded-full w-[200px]">
                         <h4 class="text-lg">Request Invite</h4>
