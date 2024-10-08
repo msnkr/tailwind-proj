@@ -25,7 +25,7 @@
 
 <body>
     <div class="main-container">
-        <div class="main">
+        <div class="main  xl:overflow-hidden">
             <div class="navbar-section p-9 flex justify-between ">
                 <div class="logo">
                     <div class="logo-image">
@@ -303,9 +303,10 @@
                     </div>
                 </div>
                 <footer>
-                    <div class="footer-container pt-[50px] bg-primary pb-[100px] px-8 xl:mt-[100px]">
+                    <div class="footer-container pt-[50px] bg-primary pb-[100px] px-8 xl:mt-[100px] xl:flex xl:justify-between xl:items-center">
+                       <div class="flex-item-1 xl:ml-[100px]">
                         <div class="logo-container flex justify-center">
-                            <img src="./images/logo-footer.svg" alt="" class="w-[200px]">
+                            <img src="./images/logo-footer.svg" alt="" class="w-[200px] xl:w-[400px]">
                         </div>
                         <div class="socials-container mt-8">
                             <ul class="flex justify-center space-x-6">
@@ -326,8 +327,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="nav-container mt-8 text-center">
-                            <ul class="text-white text-lg space-y-1">
+                       </div>
+                        <div class="nav-container mt-8 text-center xl:text-start">
+                            <ul class="text-white text-lg space-y-1 xl:grid grid-cols-2 gap-6 xl:text-xl">
                                 <li>
                                     <h4>About Us</h4>
                                 </li>
@@ -348,14 +350,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="button-container text-center mt-8">
-                            <button
-                                class="bg-gradient-to-r from-secondary to-gradient  text-white text-center p-5 rounded-full w-[200px]">
-                                <h4 class="text-lg">Request Invite</h4>
-                            </button>
-                        </div>
-                        <div class="rights-reserved-container text-gray-600 mt-8 text-center">
-                            <p class="text-lg">© Easybank. All Rights Reserved</p>
+                        <div class="flex-item-3 xl:mr-[100px]">
+                            <div class="button-container text-center mt-8">
+                                <button
+                                    class="bg-gradient-to-r from-secondary to-gradient  text-white text-center p-5 rounded-full w-[200px] xl:w-[300px]">
+                                    <h4 class="text-lg">Request Invite</h4>
+                                </button>
+                            </div>
+                            <div class="rights-reserved-container text-gray-600 mt-8 text-center">
+                                <p class="text-lg">© Easybank. All Rights Reserved</p>
+                            </div>
                         </div>
                     </div>
                 </footer>
