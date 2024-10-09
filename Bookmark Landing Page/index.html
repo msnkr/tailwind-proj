@@ -1,0 +1,66 @@
+<!-- https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5267DF',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Bookmark Landing Page</title>
+</head>
+
+<body>
+    <div class="navbar-area p-8">
+        <div class="navbar flex justify-between items-center">
+            <div class="icon-navbar">
+                <img src="./images/logo-bookmark.svg" alt="" class="w-[200px]">
+            </div>
+            <div class="burger-icon-navbar">
+                <img src="./images/icon-hamburger.svg" alt="" class="w-[20px] cursor-pointer">
+            </div>
+        </div>
+    </div>
+    <div class="hero-section mt-8 p-4">
+        <div class="hero-section-image relative">
+            <div class="hero-image">
+                <img src="./images/illustration-hero.svg" alt="" class="z-50 absolute">
+            </div>
+            <div class="bg-backdrop-containe">
+                <div class="background w-2/3 h-[200px] bg-primary rounded-l-full absolute top-[150px] right-0 z-0"></div>
+            </div>
+        </div>
+        <div class="hero-section-wording mt-[400px]">
+            <div class="wording text-center">
+                <div class="heading my-5 tracking-wider">
+                    <h1 class="text-5xl">A Simple Bookmark Manager</h1>
+                </div>
+                <div class="text-area my-5">
+                    <p class="text-xl tracking-tighter">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                </div>
+                <div class="buttons my-5 flex">
+                    <div class="button-container mx-4">
+                        <button class="bg-primary text-white p-5 rounded-xl text-xl font-semibold">Get it on Chrome</button>
+                    </div>
+                    <div class="button-container mx-4">
+                        <button class="bg-gray-100 text-gray-400 p-5 rounded-xl text-xl font-semibold shadow-2xl">Get it on Firefox</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
