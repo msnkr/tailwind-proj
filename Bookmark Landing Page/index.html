@@ -17,6 +17,15 @@
                     },
                     fontFamily: {
                         custom: ["Roboto"]
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: "0" },
+                            "100%": { opacity: "1" }
+                        },
+                    },
+                    animation: {
+                        fadeIn: "fadeIn 1s ease-in-out",
                     }
                 }
             }
@@ -42,17 +51,17 @@
         </div>
         <div class="navbar-container-items hidden">
             <div class="ul-container mt-4">
-              <ul class="text-end text-xl space-y-2">
-                  <li class="py-4 px-6">Features</li>
-                  <li class="py-4 px-6">Pricing</li>
-                  <li class="py-4 px-6">Contact</li>
-                  <div class="log-in-container">
-                      <li>
-                          <button class="py-4 bg-orange-600 text-white rounded-xl px-6">Log In</button>
-                      </li>
-                  </div>
-              </ul>
-          </div>
+                <ul class="text-end text-xl space-y-2">
+                    <li class="py-4 px-6">Features</li>
+                    <li class="py-4 px-6">Pricing</li>
+                    <li class="py-4 px-6">Contact</li>
+                    <div class="log-in-container">
+                        <li>
+                            <button class="py-4 bg-orange-600 text-white rounded-xl px-6">Log In</button>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
     </div>
