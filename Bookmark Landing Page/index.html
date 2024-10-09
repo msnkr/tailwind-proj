@@ -43,18 +43,18 @@
     <div class="navbar-area p-8">
         <div class="navbar flex justify-between items-start">
             <div class="icon-navbar">
-                <img src="./images/logo-bookmark.svg" alt="" class="w-[200px]">
+                <img src="./images/logo-bookmark.svg" alt="" class="w-[200px] xl:w-[400px]">
             </div>
             <div class="burger-icon-navbar">
-                <img src="./images/icon-hamburger.svg" alt="" class="w-[20px] cursor-pointer burger-icon">
+                <img src="./images/icon-hamburger.svg" alt="" class="w-[20px] cursor-pointer burger-icon xl:hidden">
             </div>
         </div>
-        <div class="navbar-container-items hidden">
+        <div class="navbar-container-items hidden xl:block">
             <div class="ul-container mt-4">
-                <ul class="text-end text-xl space-y-2">
-                    <li class="py-4 px-6">Features</li>
-                    <li class="py-4 px-6">Pricing</li>
-                    <li class="py-4 px-6">Contact</li>
+                <ul class="text-end text-xl space-y-2 xl:flex xl:space-y-0 xl:absolute top-8 right-8">
+                    <li class="py-4 px-6 cursor-pointer">Features</li>
+                    <li class="py-4 px-6 cursor-pointer">Pricing</li>
+                    <li class="py-4 px-6 cursor-pointer">Contact</li>
                     <div class="log-in-container">
                         <li>
                             <button class="py-4 bg-orange-600 text-white rounded-xl px-6">Log In</button>
